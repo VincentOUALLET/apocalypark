@@ -1,0 +1,8 @@
+{# <script> function swa() { return confirm("are you sure");}
+</script> #}
+
+<form method="post" action="{{ path('reservation_delete', {'id': reservation.id}) }}" onsubmit="return confirm('Etes-vous sûr?');">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ reservation.id) }}">
+    <button class="btn btn-danger mt-5">Supprimer</button>
+</form>

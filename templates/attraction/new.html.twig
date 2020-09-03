@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Attraction{% endblock %}
+
+{% block body %}
+    <div class="containerBoxes rounded">
+        <div class="p-5">
+            <h3 class="mb-5">Créer une nouvelle attraction</h3>
+
+            {{ include('attraction/_form.html.twig') }}
+        
+            <a href="{{ path('attraction_index') }}" class="btn btn-dark">Retour aux attractions</a>
+        </div>
+    </div>
+{% endblock %}

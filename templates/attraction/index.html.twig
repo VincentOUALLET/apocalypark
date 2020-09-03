@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Attraction index{% endblock %}
+
+{% block body %}
+    <div class="containerBoxes rounded mt-5 row justify-content-center">
+        <div class="p-5">
+
+        <h2>Nos attractions</h2>
+        <a href="{{ path('attraction_new') }}" class="btn btn-warning mt-5">Créer une nouvelle attraction</a>
+        </div>
+    </div>
+    <div class="row justify-content-around">
+    {% for attraction in attractions %}
+            <div class="containerBoxes rounded my-5 col-lg-5 col-xs-12 ">
+                <div class="p-4 row flex-column align-items-center">
+                    <h3>{{ attraction.title }}</h3>
+                    <img src="{{asset('uploads/attraction/' ~ attraction.getFeaturedImage() )}}"
+                        alt="image du film {{attraction.title}}" class="my-5"
+                        style="max-height: 300px; max-width: 300px">
+                    <p>Créée le : {{ attraction.updatedAt ? attraction.updatedAt|date('d-m-y') : '' }}</p>
+                    <p>Par : {{ attraction.createdBy }}</p>
+                    <div class="text-justify mb-3">Description : {{ attraction.description }}</div>
+                    <div>
+                        <a href="{{ path('attraction_show', {'id': attraction.id}) }}" class="btn btn-dark">Voir</a>
+                        <a href="{{ path('attraction_edit', {'id': attraction.id}) }}" class="btn btn-warning">Modifier</a>
+                    </div>
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+{% endblock %}

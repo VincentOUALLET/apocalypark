@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Attraction{% endblock %}
+
+{% block body %}
+    <h1>Attraction</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ attraction.id }}</td>
+            </tr>
+            <tr>
+                <th>Featured_image</th>
+                <td>{{ attraction.featuredImage }}</td>
+            </tr>
+            <tr>
+                <th>Updated_at</th>
+                <td>{{ attraction.updatedAt ? attraction.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ attraction.description }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ attraction.title }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('attraction_index') }}">back to list</a>
+
+    <a href="{{ path('attraction_edit', {'id': attraction.id}) }}">edit</a>
+
+    {{ include('attraction/_delete_form.html.twig') }}
+{% endblock %}

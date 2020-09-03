@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier la réservation{% endblock %}
+
+{% block body %}
+    {{ include('reservation/_delete_form.html.twig') }}
+    {{ include('reservation/_form.html.twig', {'button_label': 'Enregistrer les modifications'}) }}
+{% endblock %}

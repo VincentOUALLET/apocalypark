@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg navbar-dark  text-dark navbarImprove py-4" id="mainNav">
+    
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">
+        <p class="ml-5 text-white">Réservez! Tant que vous le pouvez encore...</p>
+        <h1>APOCALYPARK</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fontResponsivity" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto ">
+                <li
+                {% if app.request.get('_route') == 'home' %} class="active nav-item px-lg-4"{% endif %}
+                class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="{{ path("home") }}">Accueil</a>
+                </li>
+                <li
+                {% if app.request.get('_route') == 'attraction_index' %} class="active nav-item px-lg-4"{% endif %}
+                class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="{{ path("attraction_index") }}">Attractions</a>
+                </li>
+                {# <li
+                {% if app.request.get('_route') == 'shows' %} class="active nav-item px-lg-4"{% endif %}
+                class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="{{ path("shows") }}">Spectacles</a>
+                </li> #}
+                <li
+                {% if app.request.get('_route') == 'reservation_index' %} class="active nav-item px-lg-4"{% endif %}
+                class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="{{ path("reservation_index") }}">Mes réservations</a>
+                </li>
+                <a class="nav-link"
+                    {% if app.user != '' %}
+                    href="{{ path("user_show") }}"
+                    {% else %}
+                    {# onclick="alert('Vous n\'êtes pas connecté');" #}
+                    href="{{ path('app_login') }}"
+                    {% endif %}>
+                    <li
+                    {% if app.request.get('_route') == 'user_show' %}
+                    class="active nav-item px-lg-4 text-uppercase text-expanded"
+                    {% endif %}
+                    class="nav-item px-lg-4 text-uppercase text-expanded">
+                        Mon profil
+                    </li>
+                </a>
+                {% if is_granted('ROLE_ADMIN') %}
+                <a class="nav-link" href="{{ path("admin") }}">
+                    <li
+                    class="nav-item px-lg-4 text-uppercase text-expanded">
+                        Admin
+                    </li>
+                </a>
+                {% endif %}
+                {% if app.user == "" %}
+                    <a class="nav-link" href="{{ path("app_login") }}">
+                        <li
+                        class="nav-item px-lg-4 btn btn-dark text-uppercase text-expanded rounded">
+                            Se connecter
+                        </li>
+                    </a>
+                    {% else %}
+                        <a class="nav-link" href="{{ path("app_logout") }}">
+                            <li
+                            class="nav-item px-lg-4 btn btn-dark text-uppercase text-expanded rounded">
+                                Se déconnecter
+                            </li>
+                        </a>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>

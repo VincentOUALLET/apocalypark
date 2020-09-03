@@ -1,0 +1,22 @@
+<div class="containerBoxes rounded my-5">
+    <div class="p-5">
+        {# {{ form_row(form.reservation_date) }} #}
+        
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {# si on est sur la route de modification #}
+        {% if app.request.get('_route') == 'reservation_edit' %}
+            <div class="row">
+                <div class="col-lg-6 col-xs-12 mb-3">
+                    <button class="btn btn-success">{{ button_label }}</button>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                </div>
+            </div>
+        {% else %}
+        <button class="btn btn-success">{{ button_label|default('Réserver') }}</button>
+        {% endif %}
+        {{ form_end(form) }}
+        <a href="{{ path('reservation_index') }}" class="btn btn-dark my-5">Retour à la liste</a>        
+    </div>
+</div>

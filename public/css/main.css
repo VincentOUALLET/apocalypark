@@ -1,0 +1,96 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    }
+
+body {
+    background: url(../images/bg.png) no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    background-attachment: fixed;
+    font-family: Georgia, serif;
+    position: relative;
+}
+
+/* .container-fluid {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+} */
+
+.container {
+    /* color: white; */
+}
+
+.navbarImprove {
+    /* color: white; */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* position: sticky; */
+}
+
+.containerBoxes {
+    background-color: rgba(0, 0, 0, 0.4);
+    /* opacity: 0.5; */
+    color: white;
+    /* margin-top: 20%; */
+}
+
+.footer {
+    position: absolute;
+    /* margin-left: 15%; */
+    /* padding-left: 15%; */
+    bottom: 0px;
+}
+
+.footer h3 {
+    color: white;
+}
+
+h1 {
+    font-size: 500%;
+}
+
+h2 {
+    color: white;
+    font-size: 300%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+.form-group {
+    width: 50%;
+    color: white;
+    /* margin-bottom: 20%; */
+}
+
+.btn {
+    font-size: 90%;
+}
+
+.table tr th,td {
+    color: white;
+}
+
+/* .form-group::placeholder {
+    font-size: 500px !important;
+} */
+
+@media only screen and (min-width: 450px) {
+    .navbarImprove {
+        background-color: rgba(0, 0, 0, 0.4);
+        /* margin-left: 15%; */
+        /* position: sticky; */
+        top: 0px;
+    }
+    /* body {
+        background: none;
+        background-size: cover;
+        font-size: 30px;
+        background-attachment: fixed;
+        font-family: Georgia, serif;
+        position: relative;
+    } */
+  } 

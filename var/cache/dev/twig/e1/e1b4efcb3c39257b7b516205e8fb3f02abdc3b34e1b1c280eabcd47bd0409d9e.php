@@ -102,6 +102,6 @@ class __TwigTemplate_07a56d5336e58628adde433af94d47ce571af1e8d65ca975e94e593a48d
     {% if link|default(false) %}</a>{% endif %}
         <div class=\"sf-toolbar-info\">{{ text|default('') }}</div>
 </div>
-", "@WebProfiler/Profiler/toolbar_item.html.twig", "/home/voualla/Documents/Symfony/apocalypark/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_item.html.twig");
+", "@WebProfiler/Profiler/toolbar_item.html.twig", "/var/www/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_item.html.twig");
     }
 }

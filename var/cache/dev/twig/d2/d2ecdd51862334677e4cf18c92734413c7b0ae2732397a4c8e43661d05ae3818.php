@@ -168,6 +168,6 @@ class __TwigTemplate_e7f7e665440d4f90f8298e602613b688999ac3337189890b51aafdaa305
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: false }) }}
 {% endblock %}
-", "@WebProfiler/Collector/ajax.html.twig", "/home/voualla/Documents/Symfony/apocalypark/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Collector/ajax.html.twig");
+", "@WebProfiler/Collector/ajax.html.twig", "/var/www/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Collector/ajax.html.twig");
     }
 }

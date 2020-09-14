@@ -155,6 +155,6 @@ class __TwigTemplate_4c6deed87a4b2d4521e9fd123acee60733b9c565e4ea19b700f6637bd9e
 {% block panel %}
     {{ render(path('_profiler_router', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/home/voualla/Documents/Symfony/apocalypark/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/var/www/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

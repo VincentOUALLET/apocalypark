@@ -1882,6 +1882,6 @@ class __TwigTemplate_e7e45cf18a1abdb0ad818b947c9a4380ee28a9f03de04274bcf5440eeab
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/voualla/Documents/Symfony/apocalypark/apocalypark/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/var/www/apocalypark/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

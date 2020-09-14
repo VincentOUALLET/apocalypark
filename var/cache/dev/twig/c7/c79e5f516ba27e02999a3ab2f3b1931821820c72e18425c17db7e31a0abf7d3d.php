@@ -710,6 +710,6 @@ class __TwigTemplate_97cfcdcd6e434a491ec5216c2c8917df875ec4b0c4ae4e78a0c346f1ca3
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/mailer.html.twig", "/home/voualla/Documents/Symfony/apocalypark/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Collector/mailer.html.twig");
+", "@WebProfiler/Collector/mailer.html.twig", "/var/www/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Collector/mailer.html.twig");
     }
 }

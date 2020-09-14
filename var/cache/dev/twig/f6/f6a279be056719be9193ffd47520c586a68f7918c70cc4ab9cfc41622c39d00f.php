@@ -1706,6 +1706,6 @@ class __TwigTemplate_c5def5bcfdb072f8f6e2824c5148ba3abafc3412ae662ca59ace952fdd0
     });
 
 /*]]>*/</script>
-", "@WebProfiler/Profiler/base_js.html.twig", "/home/voualla/Documents/Symfony/apocalypark/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base_js.html.twig");
+", "@WebProfiler/Profiler/base_js.html.twig", "/var/www/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base_js.html.twig");
     }
 }

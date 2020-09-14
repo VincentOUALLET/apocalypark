@@ -88,69 +88,76 @@ class __TwigTemplate_175119c5ad3b0397c4098ad95b9b651948ed0bf0b2711e225d1835df20f
         echo "
     <div class=\"containerBoxes rounded my-5\">
         <div class=\"p-5\">
-            <h3 class=\"mb-5\">";
+            <!--             <h3 class=\"mb-5\">";
         // line 9
         echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 9, $this->source); })()), "lastname", [], "any", false, false, false, 9)), "html", null, true);
-        echo " ";
+        echo " <?php ucfirst( ?> ";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 9, $this->source); })()), "firstname", [], "any", false, false, false, 9), "html", null, true);
-        echo "</h3>
+        echo " <?php ); ?></h3>
+ -->
+            <h3 class=\"mb-5\">";
+        // line 11
+        echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 11, $this->source); })()), "lastname", [], "any", false, false, false, 11)), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 11, $this->source); })()), "firstname", [], "any", false, false, false, 11), "html", null, true);
+        echo " </h3>
             <table class=\"table\">
                 <tbody>
                     <tr>
                         <th>Nom de famille :</th>
                         <td>";
-        // line 14
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 14, $this->source); })()), "lastname", [], "any", false, false, false, 14), "html", null, true);
+        // line 16
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 16, $this->source); })()), "lastname", [], "any", false, false, false, 16), "html", null, true);
         echo "</td>
                     </tr>
                     <tr>
                         <th>Prénom :</th>
                         <td>";
-        // line 18
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 18, $this->source); })()), "firstname", [], "any", false, false, false, 18), "html", null, true);
+        // line 20
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 20, $this->source); })()), "firstname", [], "any", false, false, false, 20), "html", null, true);
         echo "</td>
                     </tr>
                     ";
-        // line 24
+        // line 26
         echo "                    <tr>
                         <th>Email :</th>
                         <td>";
-        // line 26
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 26, $this->source); })()), "email", [], "any", false, false, false, 26), "html", null, true);
+        // line 28
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 28, $this->source); })()), "email", [], "any", false, false, false, 28), "html", null, true);
         echo "</td>
                     </tr>
                     <tr>
                         <th>Role :</th>
                         <td>
                             ";
-        // line 31
-        if (0 === twig_compare(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 31, $this->source); })()), "roles", [], "any", false, false, false, 31), 0, [], "array", false, false, false, 31), "ROLE_USER")) {
-            // line 32
+        // line 33
+        if (0 === twig_compare(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 33, $this->source); })()), "roles", [], "any", false, false, false, 33), 0, [], "array", false, false, false, 33), "ROLE_USER")) {
+            // line 34
             echo "                            Utilisateur
                             ";
-        } elseif (0 === twig_compare(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 33
-(isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 33, $this->source); })()), "roles", [], "any", false, false, false, 33), 0, [], "array", false, false, false, 33), "ROLE_EDITOR")) {
-            // line 34
+        } elseif (0 === twig_compare(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 35
+(isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 35, $this->source); })()), "roles", [], "any", false, false, false, 35), 0, [], "array", false, false, false, 35), "ROLE_EDITOR")) {
+            // line 36
             echo "                            Editeur
                             ";
-        } elseif (0 === twig_compare(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 35
-(isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 35, $this->source); })()), "roles", [], "any", false, false, false, 35), 0, [], "array", false, false, false, 35), "ROLE_MODERATOR")) {
-            // line 36
+        } elseif (0 === twig_compare(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 37
+(isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 37, $this->source); })()), "roles", [], "any", false, false, false, 37), 0, [], "array", false, false, false, 37), "ROLE_MODERATOR")) {
+            // line 38
             echo "                            Modérateur
                             ";
         } else {
-            // line 38
+            // line 40
             echo "                            Administrateur
                             ";
         }
-        // line 40
+        // line 42
         echo "                        </td>
                     </tr>
                     <tr>
                         <th>Mot de passe :</th>
                         <td>
                             <a href=\"";
-        // line 45
+        // line 47
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\" class=\"btn btn-warning\">Modifier</a>
                         </td>
@@ -158,7 +165,7 @@ class __TwigTemplate_175119c5ad3b0397c4098ad95b9b651948ed0bf0b2711e225d1835df20f
                 </tbody>
             </table>
             ";
-        // line 50
+        // line 52
         echo twig_include($this->env, $context, "user/_delete_form.html.twig");
         echo "
         </div>
@@ -185,7 +192,7 @@ class __TwigTemplate_175119c5ad3b0397c4098ad95b9b651948ed0bf0b2711e225d1835df20f
 
     public function getDebugInfo()
     {
-        return array (  162 => 50,  154 => 45,  147 => 40,  143 => 38,  139 => 36,  137 => 35,  134 => 34,  132 => 33,  129 => 32,  127 => 31,  119 => 26,  115 => 24,  110 => 18,  103 => 14,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  169 => 52,  161 => 47,  154 => 42,  150 => 40,  146 => 38,  144 => 37,  141 => 36,  139 => 35,  136 => 34,  134 => 33,  126 => 28,  122 => 26,  117 => 20,  110 => 16,  100 => 11,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -198,7 +205,9 @@ class __TwigTemplate_175119c5ad3b0397c4098ad95b9b651948ed0bf0b2711e225d1835df20f
 
     <div class=\"containerBoxes rounded my-5\">
         <div class=\"p-5\">
-            <h3 class=\"mb-5\">{{user.lastname | upper}} {{user.firstname}}</h3>
+            <!--             <h3 class=\"mb-5\">{{user.lastname | upper}} <?php ucfirst( ?> {{ user.firstname }} <?php ); ?></h3>
+ -->
+            <h3 class=\"mb-5\">{{user.lastname | upper}} {{ user.firstname }} </h3>
             <table class=\"table\">
                 <tbody>
                     <tr>
@@ -244,6 +253,6 @@ class __TwigTemplate_175119c5ad3b0397c4098ad95b9b651948ed0bf0b2711e225d1835df20f
     </div>
 
 {% endblock %}
-", "user/show.html.twig", "/home/voualla/Documents/Symfony/apocalypark/apocalypark/templates/user/show.html.twig");
+", "user/show.html.twig", "/var/www/apocalypark/templates/user/show.html.twig");
     }
 }

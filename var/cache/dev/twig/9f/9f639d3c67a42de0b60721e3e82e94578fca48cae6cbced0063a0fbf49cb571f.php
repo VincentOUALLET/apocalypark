@@ -97,6 +97,6 @@ class __TwigTemplate_057bae27a157581a0059542fe286e32f50320a68fcb98188a126b5fb508
         </div>
     </div>
 </div>
-", "@WebProfiler/Profiler/header.html.twig", "/home/voualla/Documents/Symfony/apocalypark/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
+", "@WebProfiler/Profiler/header.html.twig", "/var/www/apocalypark/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
     }
 }
